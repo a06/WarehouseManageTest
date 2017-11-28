@@ -1,0 +1,586 @@
+USE [WarehouseManage]
+GO
+/****** 对象:  Table [dbo].[CashIns]    脚本日期: 02/09/2015 00:04:25 ******/
+DROP TABLE [dbo].[CashIns]
+GO
+/****** 对象:  Table [dbo].[CashOuts]    脚本日期: 02/09/2015 00:04:28 ******/
+DROP TABLE [dbo].[CashOuts]
+GO
+/****** 对象:  Table [dbo].[Categories]    脚本日期: 02/09/2015 00:04:31 ******/
+DROP TABLE [dbo].[Categories]
+GO
+/****** 对象:  Table [dbo].[Customers]    脚本日期: 02/09/2015 00:04:34 ******/
+DROP TABLE [dbo].[Customers]
+GO
+/****** 对象:  Table [dbo].[Departments]    脚本日期: 02/09/2015 00:04:37 ******/
+DROP TABLE [dbo].[Departments]
+GO
+/****** 对象:  Table [dbo].[Employees]    脚本日期: 02/09/2015 00:04:39 ******/
+DROP TABLE [dbo].[Employees]
+GO
+/****** 对象:  Table [dbo].[GiftItems]    脚本日期: 02/09/2015 00:04:43 ******/
+DROP TABLE [dbo].[GiftItems]
+GO
+/****** 对象:  Table [dbo].[Gifts]    脚本日期: 02/09/2015 00:04:46 ******/
+DROP TABLE [dbo].[Gifts]
+GO
+/****** 对象:  Table [dbo].[Logs]    脚本日期: 02/09/2015 00:04:48 ******/
+DROP TABLE [dbo].[Logs]
+GO
+/****** 对象:  Table [dbo].[Permissions]    脚本日期: 02/09/2015 00:04:50 ******/
+DROP TABLE [dbo].[Permissions]
+GO
+/****** 对象:  Table [dbo].[PurchaseReturnItems]    脚本日期: 02/09/2015 00:05:03 ******/
+DROP TABLE [dbo].[PurchaseReturnItems]
+GO
+/****** 对象:  Table [dbo].[RolePermisstions]    脚本日期: 02/09/2015 00:05:09 ******/
+DROP TABLE [dbo].[RolePermisstions]
+GO
+/****** 对象:  Table [dbo].[Roles]    脚本日期: 02/09/2015 00:05:12 ******/
+DROP TABLE [dbo].[Roles]
+GO
+/****** 对象:  Table [dbo].[SaleItems]    脚本日期: 02/09/2015 00:05:15 ******/
+DROP TABLE [dbo].[SaleItems]
+GO
+/****** 对象:  Table [dbo].[SaleReturnItems]    脚本日期: 02/09/2015 00:05:18 ******/
+DROP TABLE [dbo].[SaleReturnItems]
+GO
+/****** 对象:  Table [dbo].[SaleReturns]    脚本日期: 02/09/2015 00:05:21 ******/
+DROP TABLE [dbo].[SaleReturns]
+GO
+/****** 对象:  Table [dbo].[UserRoles]    脚本日期: 02/09/2015 00:05:30 ******/
+DROP TABLE [dbo].[UserRoles]
+GO
+/****** 对象:  Table [dbo].[Users]    脚本日期: 02/09/2015 00:05:33 ******/
+DROP TABLE [dbo].[Users]
+GO
+/****** 对象:  View [dbo].[PurchaseView]    脚本日期: 02/09/2015 00:05:34 ******/
+DROP VIEW [dbo].[PurchaseView]
+GO
+/****** 对象:  View [dbo].[PurchaseItemViews]    脚本日期: 02/09/2015 00:05:34 ******/
+DROP VIEW [dbo].[PurchaseItemViews]
+GO
+/****** 对象:  UserDefinedFunction [dbo].[GetNewBillCode]    脚本日期: 02/09/2015 00:05:33 ******/
+DROP FUNCTION [dbo].[GetNewBillCode]
+GO
+/****** 对象:  Table [dbo].[Products]    脚本日期: 02/09/2015 00:04:53 ******/
+DROP TABLE [dbo].[Products]
+GO
+/****** 对象:  Table [dbo].[PurchaseItems]    脚本日期: 02/09/2015 00:04:59 ******/
+DROP TABLE [dbo].[PurchaseItems]
+GO
+/****** 对象:  Table [dbo].[Suppliers]    脚本日期: 02/09/2015 00:05:28 ******/
+DROP TABLE [dbo].[Suppliers]
+GO
+/****** 对象:  Table [dbo].[Purchases]    脚本日期: 02/09/2015 00:05:07 ******/
+DROP TABLE [dbo].[Purchases]
+GO
+/****** 对象:  Table [dbo].[ProductUnits]    脚本日期: 02/09/2015 00:04:56 ******/
+DROP TABLE [dbo].[ProductUnits]
+GO
+/****** 对象:  Table [dbo].[PurchaseReturns]    脚本日期: 02/09/2015 00:05:05 ******/
+DROP TABLE [dbo].[PurchaseReturns]
+GO
+/****** 对象:  Table [dbo].[Sales]    脚本日期: 02/09/2015 00:05:26 ******/
+DROP TABLE [dbo].[Sales]
+GO
+/****** 对象:  Table [dbo].[CashIns]    脚本日期: 02/09/2015 00:04:25 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[CashIns](
+	[CashInID] [int] IDENTITY(1,1) NOT NULL,
+	[CashInDate] [datetime] NOT NULL,
+	[CashInCode] [nvarchar](50) NOT NULL,
+	[Cash] [money] NOT NULL,
+	[Sender] [nvarchar](50) NOT NULL,
+	[Description] [nvarchar](50) NULL,
+ CONSTRAINT [PK_CashIns] PRIMARY KEY CLUSTERED 
+(
+	[CashInID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[CashOuts]    脚本日期: 02/09/2015 00:04:28 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[CashOuts](
+	[CashOutID] [int] IDENTITY(1,1) NOT NULL,
+	[CashOutDate] [datetime] NOT NULL,
+	[CashOutCode] [nvarchar](50) NOT NULL,
+	[Cash] [money] NOT NULL,
+	[Receiver] [nvarchar](50) NOT NULL,
+	[Description] [nvarchar](50) NULL,
+ CONSTRAINT [PK_CashOuts] PRIMARY KEY CLUSTERED 
+(
+	[CashOutID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Categories]    脚本日期: 02/09/2015 00:04:31 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Categories](
+	[CategoryID] [int] IDENTITY(1,1) NOT NULL,
+	[CategoryCode] [nvarchar](50) NOT NULL,
+	[CategoryName] [nvarchar](50) NOT NULL,
+	[ParentID] [int] NOT NULL,
+	[IsEnable] [bit] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED 
+(
+	[CategoryID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Customers]    脚本日期: 02/09/2015 00:04:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Customers](
+	[CustomerID] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerCode] [nvarchar](50) NOT NULL,
+	[CustomerName] [nvarchar](50) NOT NULL,
+	[IsEnable] [bit] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Customers] PRIMARY KEY CLUSTERED 
+(
+	[CustomerID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Departments]    脚本日期: 02/09/2015 00:04:37 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Departments](
+	[DepartmentID] [int] IDENTITY(1,1) NOT NULL,
+	[DepartmentCode] [nvarchar](50) NOT NULL,
+	[DepartmentName] [nvarchar](50) NOT NULL,
+	[ParentID] [int] NULL,
+	[IsEnable] [bit] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Departments] PRIMARY KEY CLUSTERED 
+(
+	[DepartmentID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Employees]    脚本日期: 02/09/2015 00:04:39 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Employees](
+	[EmployeeID] [int] IDENTITY(1,1) NOT NULL,
+	[EmployeeCode] [nvarchar](50) NOT NULL,
+	[EmployeeName] [nvarchar](50) NOT NULL,
+	[DepartmentID] [int] NOT NULL,
+	[IsEnable] [bit] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Employees] PRIMARY KEY CLUSTERED 
+(
+	[EmployeeID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[GiftItems]    脚本日期: 02/09/2015 00:04:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[GiftItems](
+	[GiftItemID] [int] IDENTITY(1,1) NOT NULL,
+	[GiftID] [int] NOT NULL,
+	[SortID] [int] NOT NULL,
+	[ProductID] [int] NOT NULL,
+	[ProductUnitID] [int] NOT NULL,
+	[Price] [money] NOT NULL,
+	[Quantity] [numeric](18, 2) NOT NULL,
+	[Description] [nvarchar](50) NULL,
+ CONSTRAINT [PK_GiftItems] PRIMARY KEY CLUSTERED 
+(
+	[GiftItemID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Gifts]    脚本日期: 02/09/2015 00:04:46 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Gifts](
+	[GiftID] [int] IDENTITY(1,1) NOT NULL,
+	[GiftDate] [datetime] NOT NULL,
+	[GiftCode] [nvarchar](50) NOT NULL,
+	[Sender] [nvarchar](50) NOT NULL,
+	[Receiver] [nvarchar](50) NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Gifts] PRIMARY KEY CLUSTERED 
+(
+	[GiftID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Logs]    脚本日期: 02/09/2015 00:04:48 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Logs](
+	[LogID] [int] IDENTITY(1,1) NOT NULL,
+	[LogDate] [datetime] NOT NULL,
+	[UserID] [int] NOT NULL,
+	[LogDetail] [nvarchar](1000) NOT NULL,
+ CONSTRAINT [PK_Logs] PRIMARY KEY CLUSTERED 
+(
+	[LogID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Permissions]    脚本日期: 02/09/2015 00:04:50 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Permissions](
+	[PermissionID] [int] IDENTITY(1,1) NOT NULL,
+	[PermissionCode] [nvarchar](50) NOT NULL,
+	[PermissionName] [nvarchar](50) NOT NULL,
+	[IsEnable] [bit] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Permissions] PRIMARY KEY CLUSTERED 
+(
+	[PermissionID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[ProductUnits]    脚本日期: 02/09/2015 00:04:56 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ProductUnits](
+	[ProductUnitID] [int] IDENTITY(1,1) NOT NULL,
+	[ProductUnitCode] [nvarchar](50) NOT NULL,
+	[ProductUnitName] [nvarchar](50) NOT NULL,
+	[ProductID] [int] NOT NULL,
+	[IsEnable] [bit] NOT NULL,
+	[Description] [nvarchar](50) NULL,
+ CONSTRAINT [PK_ProductUnits] PRIMARY KEY CLUSTERED 
+(
+	[ProductUnitID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[PurchaseReturnItems]    脚本日期: 02/09/2015 00:05:03 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[PurchaseReturnItems](
+	[PurchaseReturnItemID] [int] IDENTITY(1,1) NOT NULL,
+	[PurchaseReturnID] [int] NOT NULL,
+	[SortID] [int] NOT NULL,
+	[ProductID] [int] NOT NULL,
+	[ProductUnitID] [int] NOT NULL,
+	[UnitPrice] [money] NOT NULL,
+	[Quantity] [numeric](18, 2) NOT NULL,
+	[Description] [nvarchar](50) NULL,
+ CONSTRAINT [PK_PurchaseReturnItems] PRIMARY KEY CLUSTERED 
+(
+	[PurchaseReturnItemID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[PurchaseReturns]    脚本日期: 02/09/2015 00:05:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[PurchaseReturns](
+	[PurchaseReturnID] [int] IDENTITY(1,1) NOT NULL,
+	[BillDate] [datetime] NOT NULL,
+	[BillCode] [nvarchar](50) NOT NULL,
+	[SupplierID] [int] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_PurchaseReturns] PRIMARY KEY CLUSTERED 
+(
+	[PurchaseReturnID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Purchases]    脚本日期: 02/09/2015 00:05:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Purchases](
+	[PurchaseID] [int] IDENTITY(1,1) NOT NULL,
+	[BillDate] [datetime] NOT NULL,
+	[BillCode] [nvarchar](50) NOT NULL,
+	[SupplierID] [int] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Purchases] PRIMARY KEY CLUSTERED 
+(
+	[PurchaseID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[RolePermisstions]    脚本日期: 02/09/2015 00:05:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[RolePermisstions](
+	[RolePermisstionID] [int] IDENTITY(1,1) NOT NULL,
+	[RoleID] [int] NOT NULL,
+	[PermisstionID] [int] NOT NULL,
+ CONSTRAINT [PK_RolePermisstions] PRIMARY KEY CLUSTERED 
+(
+	[RolePermisstionID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Roles]    脚本日期: 02/09/2015 00:05:12 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Roles](
+	[RoleID] [int] IDENTITY(1,1) NOT NULL,
+	[RoleCode] [nvarchar](50) NOT NULL,
+	[RoleName] [nvarchar](50) NOT NULL,
+	[IsEnable] [bit] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Roles] PRIMARY KEY CLUSTERED 
+(
+	[RoleID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[SaleItems]    脚本日期: 02/09/2015 00:05:15 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[SaleItems](
+	[SaleItemID] [int] IDENTITY(1,1) NOT NULL,
+	[SaleID] [int] NOT NULL,
+	[SortID] [int] NOT NULL,
+	[ProductID] [int] NOT NULL,
+	[ProductUnitID] [int] NOT NULL,
+	[UnitPrice] [money] NOT NULL,
+	[Quantity] [numeric](18, 2) NOT NULL,
+	[Description] [nvarchar](50) NULL,
+ CONSTRAINT [PK_SaleItems] PRIMARY KEY CLUSTERED 
+(
+	[SaleItemID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[SaleReturnItems]    脚本日期: 02/09/2015 00:05:18 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[SaleReturnItems](
+	[SaleReturnItemID] [int] IDENTITY(1,1) NOT NULL,
+	[SaleReturnID] [int] NOT NULL,
+	[SortID] [int] NOT NULL,
+	[ProductID] [int] NOT NULL,
+	[ProductUnitID] [int] NOT NULL,
+	[Price] [money] NOT NULL,
+	[Quantity] [numeric](18, 2) NOT NULL,
+	[Description] [nvarchar](50) NULL,
+ CONSTRAINT [PK_SaleReturnItems] PRIMARY KEY CLUSTERED 
+(
+	[SaleReturnItemID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[SaleReturns]    脚本日期: 02/09/2015 00:05:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[SaleReturns](
+	[SaleReturnID] [int] IDENTITY(1,1) NOT NULL,
+	[SaleReturnDate] [datetime] NOT NULL,
+	[SaleReturnCode] [nvarchar](50) NOT NULL,
+	[CustomerID] [int] NOT NULL,
+	[Sender] [nvarchar](50) NULL,
+	[Receiver] [nvarchar](50) NULL,
+	[Description] [nvarchar](100) NULL
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Sales]    脚本日期: 02/09/2015 00:05:26 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Sales](
+	[SaleID] [int] IDENTITY(1,1) NOT NULL,
+	[BillDate] [datetime] NOT NULL,
+	[BillCode] [nvarchar](50) NOT NULL,
+	[CustomerID] [int] NOT NULL,
+	[Sender] [nvarchar](50) NULL,
+	[SenderFee] [money] NULL,
+	[Receiver] [nvarchar](50) NULL,
+	[ReceiverFee] [money] NULL,
+	[Collecter] [nvarchar](50) NULL,
+	[CollecterFee] [money] NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Sales] PRIMARY KEY CLUSTERED 
+(
+	[SaleID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Suppliers]    脚本日期: 02/09/2015 00:05:28 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Suppliers](
+	[SupplierID] [int] IDENTITY(1,1) NOT NULL,
+	[SupplierCode] [nvarchar](50) NOT NULL,
+	[SupplierName] [nvarchar](50) NOT NULL,
+	[IsEnable] [bit] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Suppliers] PRIMARY KEY CLUSTERED 
+(
+	[SupplierID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[UserRoles]    脚本日期: 02/09/2015 00:05:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[UserRoles](
+	[UserRolesID] [int] IDENTITY(1,1) NOT NULL,
+	[UserID] [int] NOT NULL,
+	[RoleID] [int] NOT NULL,
+ CONSTRAINT [PK_UserRoles] PRIMARY KEY CLUSTERED 
+(
+	[UserRolesID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Users]    脚本日期: 02/09/2015 00:05:33 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Users](
+	[UserID] [int] IDENTITY(1,1) NOT NULL,
+	[UserCode] [nvarchar](50) NOT NULL,
+	[UserName] [nvarchar](50) NOT NULL,
+	[Passwd] [nvarchar](50) NOT NULL,
+	[EmployeeID] [int] NULL,
+	[IsEnable] [bit] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
+(
+	[UserID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[Products]    脚本日期: 02/09/2015 00:04:53 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Products](
+	[ProductID] [int] IDENTITY(1,1) NOT NULL,
+	[ProductCode] [nvarchar](50) NOT NULL,
+	[ProductName] [nvarchar](50) NOT NULL,
+	[CategoryID] [int] NULL,
+	[Unit] [nvarchar](50) NULL,
+	[IsEnable] [bit] NOT NULL,
+	[Description] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED 
+(
+	[ProductID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  Table [dbo].[PurchaseItems]    脚本日期: 02/09/2015 00:04:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[PurchaseItems](
+	[PurchaseItemID] [int] IDENTITY(1,1) NOT NULL,
+	[PurchaseID] [int] NOT NULL,
+	[SortID] [int] NOT NULL,
+	[ProductID] [int] NOT NULL,
+	[ProductUnitID] [int] NULL,
+	[UnitPrice] [money] NOT NULL,
+	[Quantity] [numeric](18, 2) NOT NULL,
+	[Description] [nvarchar](50) NULL,
+ CONSTRAINT [PK_PurchaseItems] PRIMARY KEY CLUSTERED 
+(
+	[PurchaseItemID] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** 对象:  View [dbo].[PurchaseItemViews]    脚本日期: 02/09/2015 00:05:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE VIEW [dbo].[PurchaseItemViews]
+AS
+SELECT i.PurchaseItemID, i.PurchaseID, i.SortID, i.ProductID, p.ProductName, 
+      i.ProductUnitID, u.ProductUnitName, i.UnitPrice, i.Quantity, i.Description
+FROM dbo.PurchaseItems i INNER JOIN
+      dbo.Products p ON i.ProductID = p.ProductID INNER JOIN
+      dbo.ProductUnits u ON i.ProductUnitID = u.ProductUnitID
+GO
+/****** 对象:  UserDefinedFunction [dbo].[GetNewBillCode]    脚本日期: 02/09/2015 00:05:33 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE  FUNCTION [dbo].[GetNewBillCode](@BillType nvarchar(20), @BillDate datetime)
+	returns varchar(10)
+AS
+BEGIN
+	DECLARE @BillCount int, @BillCode varchar(10)
+
+	IF Upper(@BillType) = 'PURCHASE'
+		SET @BillCount = (SELECT Count(1) FROM Purchases)
+	ELSE IF Upper(@BillType) = 'PURCHASERETURN'
+		SET @BillCount = (SELECT Count(1) FROM PurchaseReturns)
+	ELSE IF Upper(@BillType) = 'SALE'
+		SET @BillCount = (SELECT Count(1) FROM Sales)
+	ELSE
+		RETURN '!@BillType'
+
+
+	SET @BillCode = CHAR(65+@BillCount/10000)+Right('000'+Convert(varchar(10), @BillCount+1), 3)
+	RETURN Convert(varchar(10), @BillDate, 12) + @BillCode
+END
+GO
+/****** 对象:  View [dbo].[PurchaseView]    脚本日期: 02/09/2015 00:05:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE VIEW [dbo].[PurchaseView]
+AS
+SELECT p.PurchaseID, p.BillDate, p.BillCode, p.SupplierID, s.SupplierCode, 
+      s.SupplierName, p.Description
+FROM dbo.Purchases p INNER JOIN
+      dbo.Suppliers s ON p.SupplierID = s.SupplierID
+GO

@@ -1,0 +1,42 @@
+/*   2015年3月2日 22:46:10   用户:    服务器: (local)   数据库: WarehouseManage   应用程序: MS SQLEM - Data Tools*/BEGIN TRANSACTION
+SET QUOTED_IDENTIFIER ON
+SET ARITHABORT ON
+SET NUMERIC_ROUNDABORT OFF
+SET CONCAT_NULL_YIELDS_NULL ON
+SET ANSI_NULLS ON
+SET ANSI_PADDING ON
+SET ANSI_WARNINGS ON
+COMMIT
+BEGIN TRANSACTION
+CREATE TABLE dbo.Tmp_Customers
+	(
+	CustomerID int NOT NULL IDENTITY (1, 1),
+	CustomerCode nvarchar(50) NOT NULL,
+	CustomerName nvarchar(50) NOT NULL,
+	AreaName nvarchar(50) NOT NULL,
+	IsDisable bit NOT NULL,
+	Description nvarchar(100) NULL
+	)  ON [PRIMARY]
+GO
+SET IDENTITY_INSERT dbo.Tmp_Customers ON
+GO
+IF EXISTS(SELECT * FROM dbo.Customers)
+	 EXEC('INSERT INTO dbo.Tmp_Customers (CustomerID, CustomerCode, CustomerName, AreaName, IsDisable, Description)
+		SELECT CustomerID, CustomerCode, CustomerName, '''', IsDisable, Description FROM dbo.Customers (HOLDLOCK TABLOCKX)')
+GO
+SET IDENTITY_INSERT dbo.Tmp_Customers OFF
+GO
+DROP TABLE dbo.Customers
+GO
+EXECUTE sp_rename N'dbo.Tmp_Customers', N'Customers', 'OBJECT'
+GO
+ALTER TABLE dbo.Customers ADD CONSTRAINT
+	PK_Customers PRIMARY KEY CLUSTERED 
+	(
+	CustomerID
+	) ON [PRIMARY]
+
+GO
+COMMIT
+
+------------------------------

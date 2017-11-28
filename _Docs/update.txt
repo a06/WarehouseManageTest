@@ -1,0 +1,22 @@
+        protected override string getItemInsertValues(IList<string> fields, PurchaseItem item)
+        {
+            var sb = new StringBuilder();
+
+            foreach (var field in fields)
+            {
+                fixSb(sb);
+                if (isUpdate) sb.Append(field).Append("=");
+                switch (field)
+                {
+                    case "PurchaseID": if (isUpdate) sb.Append(item.PurchaseID); else sb.Append("@").Append(PRIMARY_KEY); break;
+                    case "SortID": sb.Append(item.SortID); break;
+                    case "ProductID": sb.Append(item.ProductID); break;
+                    case "UnitPrice": sb.Append(item.UnitPrice); break;
+                    case "Quantity": sb.Append(item.Quantity); break;
+                    case "Description": sb.Append("'").Append(item.Description).Append("'"); break;
+                    default: break;
+                }
+            }
+
+            return sb.ToString();
+        }

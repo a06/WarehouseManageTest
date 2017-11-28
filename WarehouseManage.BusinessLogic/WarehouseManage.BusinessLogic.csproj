@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7CACBD1-1119-4849-9AE0-B5E8F19F05F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WarehouseManage.BusinessLogic</RootNamespace>
+    <AssemblyName>WarehouseManage.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseBL.cs" />
+    <Compile Include="_Report\ReceivableReportBL.cs" />
+    <Compile Include="_Entities\EmployeeBL.cs" />
+    <Compile Include="_Entities\ProductBL.cs" />
+    <Compile Include="_Entities\CustomerBL.cs" />
+    <Compile Include="_Entities\SupplierBL.cs" />
+    <Compile Include="_Bills\_Store\PurchaseBillBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Entities\UserBL.cs" />
+    <Compile Include="_Report\StoreReportBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WarehouseManage.Common\WarehouseManage.Common.csproj">
+      <Project>{274e9870-7324-45b4-84a0-06abdd85b7b0}</Project>
+      <Name>WarehouseManage.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WarehouseManage.DataAccess\WarehouseManage.DataAccess.csproj">
+      <Project>{b8ad88c0-7053-4021-9ccc-b7a96b537d90}</Project>
+      <Name>WarehouseManage.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_Bills\_Balance\" />
+    <Folder Include="_Bills\_Cash\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormControl", "WinFormControl\WinFormControl.csproj", "{C839A1F5-BD9A-4C74-81AE-4CCFD0E96599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControlDLL", "UserControlDLL\UserControlDLL.csproj", "{FAC026D0-0C0F-4415-BABA-9713EC1337CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C839A1F5-BD9A-4C74-81AE-4CCFD0E96599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C839A1F5-BD9A-4C74-81AE-4CCFD0E96599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C839A1F5-BD9A-4C74-81AE-4CCFD0E96599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C839A1F5-BD9A-4C74-81AE-4CCFD0E96599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC026D0-0C0F-4415-BABA-9713EC1337CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC026D0-0C0F-4415-BABA-9713EC1337CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC026D0-0C0F-4415-BABA-9713EC1337CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC026D0-0C0F-4415-BABA-9713EC1337CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <DesignerItems>
+    <DesignerItem>
+      <Left>14</Left>
+      <Top>3</Top>
+      <Width>508.99999999999989</Width>
+      <Height>269.99999999999989</Height>
+      <ID>3b944711-6cdd-4184-8ef5-46373957b4c1</ID>
+      <zIndex>0</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;SketchRectangleUC SegmentLength="8" ExtensionLength="0" ExtensionVariance="0" SegmentVariance="0.1" SegmentOffset="0.12" StrokeWidth="2" BorderBrush="{av:DynamicResource BaseBorder-Sketch}" Background="{av:DynamicResource BaseBackground-Sketch}" Width="509" Height="270" FocusVisualStyle="{av:DynamicResource FocusControl-Sketch}" ToolTip="Rectangle" ClipToBounds="False" IsHitTestVisible="False" xmlns="clr-namespace:Microsoft.Expression.Prototyping.SketchControls;assembly=Microsoft.Expression.Prototyping.SketchControls" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;SketchRectangleUC.DrawPath&gt;&lt;av:Path Stroke="#FF606060" StrokeThickness="0" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" ClipToBounds="False"&gt;&lt;av:Path.Data&gt;&lt;av:PathGeometry Figures="M1,1L1,1 8.38887041160333,0.623391459008541 15.9360102087092,1.35734039459705 24.3865684287887,0.848632540169437 31.8435028249615,1.42099301840181 39.1172418422168,1.28848588639116 47.0221140807787,1.26930158996558 54.7803402326989,0.646896011323416 62.1945014827714,0.958825173315598 70.0416970727977,0.983309121190045 77.2402419866847,1.00991495281963 85.4364570852546,0.613073212136927 92.7627166582709,1.30624367182565 101.062987278532,1.309948187167 109.053889744185,0.640732018040048 117.379198136276,1.03964858894875 124.539086622692,0.764663624775701 132.289057316034,1.33361120046939 140.134002960597,1.43518515030091 147.530390966044,1.20148300972531 155.650450792002,0.591001104794589 164.225498962131,0.565549528837547 172.825152794704,1.25861435258973 181.353229926366,0.845883777865067 188.857117640217,1.40630412881221 196.748783802694,1.15133835831065 204.033269272897,1.42810039610033 211.495843374323,0.987558769561465 219.243802326221,1.23141704090107 227.596786154857,1.39390994991081 235.336885710267,0.848154380785286 242.649824844332,1.1629198442563 250.258798921571,0.873920500698084 257.669663124504,0.770225532087166 266.106793947885,1.23989060837843 273.901917451117,1.34475559965565 281.625716656811,1.31863713625886 290.169412462202,1.36768444687326 298.213776870707,0.794533912020489 306.894938517906,0.623442403600495 314.492392766535,1.40239134997808 323.107862240738,1.02759189179623 330.866538548195,1.08191410643443 338.567534596411,0.553779012050522 346.548750287025,0.640271314432884 354.880710167678,1.2900530723615 362.438355255207,1.39669474682107 370.998388183588,0.557622223639539 379.418676374866,0.920488753666368 387.585348916231,1.19472469975824 394.795023292315,1.34136568891574 403.250690339159,0.535589263310668 411.414330787906,1.14868220285844 420.074238485028,0.588484081619266 427.45297951947,1.38320859227086 436.065287995029,0.834503216841172 443.634368779661,0.64257979921782 452.016335447848,1.18198641677581 460.289879505669,0.862457127764772 468.895607624452,0.630513947222301 476.456306575073,1.27751496618978 483.90961083098,0.57526269153835 491.813770769696,1.26131032569933 508,1L508,1 507.803521909915,9.46127497678846 508.404001546137,16.9684766017192 508.466953596919,24.5333880892425 508.174111195841,31.7246645214781 507.673040112529,40.1518945708154 508.4249278627,47.6240474552083 507.577568555443,56.008319343455 507.931612106934,63.8087145124438 507.943782381359,72.1832477772914 507.607211085917,80.7634037728798 507.899856470644,89.3040161343337 508.089121817676,96.8589486793779 507.687758120982,104.336769676814 508.251444232536,112.458774132194 508.323883144172,119.589343891748 508.369000255119,128.160060810312 507.931401049573,136.041961474966 508.164147314625,143.887060290243 507.744685060989,152.038767377853 508.418180930501,160.391302444973 508.088209500922,168.450948473265 508.12869647963,175.592917411031 508.257962066981,182.795437630581 508.357755102523,191.192201375295 508.325704579493,198.981014619622 508.24941896209,206.699205114289 507.90927172887,213.799883546006 507.974555574252,221.378867937231 508.158728569047,230.049413085182 507.648835830355,238.221398586209 507.80685103857,245.85412071393 507.530101944253,253.990206869013 508,269L508,269 500.525418365745,268.857108002271 492.68351224179,268.896291744007 484.639591345094,269.260920927257 476.31078484696,269.078071453494 468.163427784842,268.525190913665 460.285477909451,268.832971674157 452.579436873281,269.148533489448 444.617226852454,268.972120854808 436.943166837036,269.260275491127 429.298295679442,268.694643270045 421.461110803917,268.689107210635 412.92774545156,268.615597955464 405.608073155716,268.527794953223 397.411204272274,268.52758587876 389.415885024634,269.16113617354 381.334852253199,268.82571412888 372.728042212377,268.550483851125 364.935491741934,269.208259659037 357.293742887789,268.938589789273 349.68685314459,269.157986350228 342.418534376351,269.298249713032 335.096546360293,268.528140294564 326.490530705691,269.459407043285 319.187629248375,268.851440528522 311.832402714355,268.727217510398 303.458733403391,269.064507532579 294.791196075787,268.983047488163 286.779533653131,268.567204269918 278.915114835036,268.861108218908 271.356071724201,269.070120084795 264.066509895549,269.24126052012 256.880147554032,269.449465563731 249.116591302691,268.672618296355 241.365844386585,268.844703270577 233.859276541281,269.291253853459 226.495928137413,269.388033719978 218.6174628954,269.151123844328 211.343147046897,269.126248712283 204.131727211897,269.36344141685 196.742475440725,268.654583834222 188.196447809337,268.838243301543 179.70309371209,268.841536538185 171.172265233821,268.555674630282 163.494341513292,268.95260103633 155.619260017408,268.879888512347 148.085016903773,269.446128593578 140.69484786582,269.216201261124 132.669536610759,268.841918240823 124.307253597223,268.665914745904 116.221305190956,269.262553596406 108.154811201588,269.259225103812 100.857415666021,268.844069566953 93.6238390525588,269.3583553666 86.3432292402735,268.820961052235 78.5942367751715,269.402936241311 69.8910453269742,269.077397374007 62.4602208999653,268.652404532279 54.2534442233623,269.257681295648 45.7087599537414,269.192468366724 38.4389166591261,268.874021620523 30.0265390523958,269.420034613333 21.5245109306517,269.346239694835 1,269L1,269 1.30440576303353,261.037183029403 0.768097373953244,252.770515708979 0.756362826689918,245.528701791101 0.618786745317921,237.086959616431 1.10628213586633,229.553383124258 1.35824976333938,221.599513864369 0.976611876482319,214.152281763541 1.4659594623712,206.636087787201 1.4404359772146,198.064281355828 0.955920856277586,190.876747833157 0.835488863437363,183.182765165785 1.44451183050643,174.860208672976 0.721702424577847,167.691033604663 1.4015228261488,159.902302611985 1.24963839172999,152.713437081548 0.858659400423803,144.095498142463 1.24438950633396,135.572282265322 0.633571749179753,127.240745558735 1.14180100751851,119.936663058228 0.873908013496998,112.498915931908 1.38770334450175,105.295977516123 0.713937127201679,97.7247313530217 0.944603228060043,89.7020949724989 1.1245080472024,81.7455302694668 1.39624895429283,73.9660734137253 0.739671899199004,66.1938551288508 1.17066506978731,57.7083529466939 0.643291542439556,49.8516778380467 0.797840718415601,42.1286360927744 1.18967981293098,33.9348361961076 0.735784810225653,26.3410346450338 1.4325686541428,17.9180741627648 1,1z" /&gt;&lt;/av:Path.Data&gt;&lt;/av:Path&gt;&lt;/SketchRectangleUC.DrawPath&gt;&lt;/SketchRectangleUC&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>426.8366666666667</Left>
+      <Top>37.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>8c34b82e-cdd1-4cd7-9003-4410dcb5248f</ID>
+      <zIndex>1</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="单号" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>221.32333333333332</Left>
+      <Top>12.5</Top>
+      <Width>118.35333333333337</Width>
+      <Height>25</Height>
+      <ID>e7c9c079-4ae0-42d8-8c7d-46ba2f5b1fa6</ID>
+      <zIndex>2</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;LabelItem Text="进货单" Height="25" Width="118.353333333333" Template="{av:DynamicResource LabelItemTemplate}" ToolTip="Label" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>355.83666666666664</Left>
+      <Top>36.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>a3f98564-8299-4df5-ba46-302a288f5954</ID>
+      <zIndex>3</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="日期" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>49</Left>
+      <Top>80</Top>
+      <Width>448</Width>
+      <Height>148.00000000000003</Height>
+      <ID>ffb96d8b-127a-42d7-aa03-95ea24296b49</ID>
+      <zIndex>4</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;DataGridItem HeadersVisibility="Column" FirstLineAsHeaders="True" Height="148" Width="448" Template="{av:DynamicResource DataGridItemTemplate}" ToolTip="DataGrid" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mdim="clr-namespace:MockupDesigner.Items.Metadatas;assembly=MockupDesigner"&gt;&lt;DataGridItem.Items&gt;&lt;x:Array Type="s:String[]"&gt;&lt;x:Array Type="s:String"&gt;&lt;s:String&gt;FirstName&lt;/s:String&gt;&lt;s:String&gt;Toto&lt;/s:String&gt;&lt;s:String&gt;Alex&lt;/s:String&gt;&lt;s:String&gt;Nico&lt;/s:String&gt;&lt;s:String&gt;Bart&lt;/s:String&gt;&lt;/x:Array&gt;&lt;x:Array Type="s:String"&gt;&lt;s:String&gt;LastName&lt;/s:String&gt;&lt;s:String&gt;Dupont&lt;/s:String&gt;&lt;s:String&gt;Durand&lt;/s:String&gt;&lt;s:String&gt;Pouet&lt;/s:String&gt;&lt;s:String&gt;Simp&lt;/s:String&gt;&lt;/x:Array&gt;&lt;x:Array Type="s:String"&gt;&lt;s:String&gt;Age&lt;/s:String&gt;&lt;s:String&gt;8&lt;/s:String&gt;&lt;s:String&gt;12&lt;/s:String&gt;&lt;s:String&gt;34&lt;/s:String&gt;&lt;s:String&gt;45&lt;/s:String&gt;&lt;/x:Array&gt;&lt;x:Array Type="s:String"&gt;&lt;s:String&gt;Admin?&lt;/s:String&gt;&lt;s:String&gt;[x]&lt;/s:String&gt;&lt;s:String&gt;[]&lt;/s:String&gt;&lt;s:String&gt;[]&lt;/s:String&gt;&lt;s:String&gt;[]&lt;/s:String&gt;&lt;/x:Array&gt;&lt;/x:Array&gt;&lt;/DataGridItem.Items&gt;&lt;DataGridItem.Metadatas&gt;&lt;x:Array Type="mdim:Metadata" /&gt;&lt;/DataGridItem.Metadatas&gt;&lt;/DataGridItem&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>47.836666666666673</Left>
+      <Top>41.5</Top>
+      <Width>212.32666666666665</Width>
+      <Height>28</Height>
+      <ID>c46bfa54-4fa8-4043-9a1e-fb451eba2d61</ID>
+      <zIndex>5</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="供应商" Height="28" Width="212.326666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>222.83666666666667</Left>
+      <Top>235.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>c88bd795-a623-4b38-8906-82291d55c6ad</ID>
+      <zIndex>6</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="送货人" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>347.83666666666664</Left>
+      <Top>234.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>a30d5f62-6ee5-45b9-ac73-69490d883f55</ID>
+      <zIndex>7</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="收货人" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>46</Left>
+      <Top>79</Top>
+      <Width>453.00000000000006</Width>
+      <Height>148.00000000000003</Height>
+      <ID>47171b29-8538-4cd9-bf4f-74205637add0</ID>
+      <zIndex>8</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;SketchRectangleUC SegmentLength="8" ExtensionLength="0" ExtensionVariance="0" SegmentVariance="0.1" SegmentOffset="0.12" StrokeWidth="2" BorderBrush="{av:DynamicResource BaseBorder-Sketch}" Background="{av:DynamicResource BaseBackground-Sketch}" Width="453" Height="148" FocusVisualStyle="{av:DynamicResource FocusControl-Sketch}" ToolTip="Rectangle" ClipToBounds="False" IsHitTestVisible="False" xmlns="clr-namespace:Microsoft.Expression.Prototyping.SketchControls;assembly=Microsoft.Expression.Prototyping.SketchControls" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;SketchRectangleUC.DrawPath&gt;&lt;av:Path Stroke="#FF606060" StrokeThickness="0" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" ClipToBounds="False"&gt;&lt;av:Path.Data&gt;&lt;av:PathGeometry Figures="M1,1L1,1 9.58320049918782,0.651407694026356 17.145066284964,1.26690795135859 24.909680297588,0.762927945763942 32.6281422293108,0.53939703219101 39.8282279816792,0.593293254957107 47.0690098986547,1.40257490165897 55.6039111128299,0.813753054274376 63.0761087905774,1.29609681183487 70.6216958104497,0.805038238285299 77.9019606300663,1.13642361584786 85.2889920075046,1.35290619767725 93.9302108294071,0.723428818163049 101.24176414377,0.664660942570369 108.844943669405,0.639778445154619 116.801641107127,0.726280479193404 124.397629534754,1.21997996747591 131.952379349786,1.20112294845286 139.516791322091,0.89916921728399 147.890160398279,1.3495960830481 156.436930871089,1.2337256997221 163.629313633282,0.630674488778834 171.574004538871,1.00105577745818 179.770449541816,1.18160360514604 187.338408653231,1.22170376676655 194.615293616285,0.672875591467591 201.863762403262,1.120582284386 209.740691746067,0.68457819376403 217.818885728394,0.719278765967956 226.374443556798,1.01208328931861 233.651376990171,0.949202228802571 241.476650888263,1.00177597475909 249.32095839689,1.22629964833294 257.436147877667,0.708182461286147 265.826229366888,0.900041586199893 273.605562304126,0.890143755014906 281.354488015231,1.34515696818641 289.748443285629,0.670746987455284 297.36202116369,1.20973826370557 305.444942735656,1.03631819255822 312.742783035772,0.704095985183537 320.76705568674,1.43849378101016 329.123873315095,0.825737524846986 337.364937062796,0.594456237984789 345.737163914549,1.05520349616452 353.939554491818,1.01470562959628 362.167837441624,1.18600052812661 369.341577203171,1.14484075066908 377.742549945894,0.95542594687261 385.547118289302,1.22899107147133 394.045958653112,0.646582115894111 401.968993962332,0.831814525898558 410.435944220834,1.01635684610028 418.265559190617,0.578393338574819 426.286422919926,0.875726985809315 434.231881385592,1.16545061005582 452,1L452,1 451.949059557388,8.20444978341962 451.803457907365,15.6974101988219 451.914102330904,24.1235005343516 452.252204917009,32.1415342520454 452.185434581389,39.9085655706656 451.870976588524,46.8500100101185 452.39786503346,55.1826892977108 451.62439867613,63.5062434358429 451.960287336121,70.580605736655 452.243707759436,77.5547268848705 451.860771115641,85.772478376125 451.759784403666,93.5966722332367 452.362973355741,100.980974817223 451.813866665323,108.185167979334 452.243182269651,115.463306006157 451.686269470426,122.930065724192 451.868677396114,131.261122108475 452,147L452,147 444.409456534081,146.767316880283 435.819022158294,147.233987811721 428.120813710437,146.906925525769 419.686746035604,147.150418976022 411.450167993134,146.686260607624 402.975273899061,146.664568795835 394.659171554623,147.397864763163 386.641243756626,146.86241302708 378.189564612393,146.631304324678 370.13022520026,147.24370240569 362.251844100769,147.321697960412 353.779894038624,146.654452550437 345.104868503314,146.609856064137 337.6369633223,146.923159709325 329.664968392647,147.275504200062 322.00178035419,147.338892015011 314.185737517351,147.061112795233 306.060157961618,147.152938015871 298.679385044334,146.863979784217 291.412412409275,147.129112262195 282.812455452487,146.70447017528 274.672179435451,146.925485402584 266.943526194146,146.675408770292 259.603384309363,146.780313405989 251.324952367084,147.361448887256 242.743508690553,146.759615936594 234.725462239496,146.681187439798 226.213421043204,146.959996540192 218.457386831194,147.277702811877 210.126643206617,146.786963741419 202.716339178017,146.915175632417 195.404302480968,147.393811046473 186.974600033033,147.473412862485 178.73390540313,146.706443348272 171.163043686926,147.38518708398 163.739794892409,146.984922439165 156.58792698634,147.433859806137 148.165923793293,146.800453221257 140.736703209642,146.935579371545 132.425479393201,147.307501287735 123.800071697404,147.427798123672 115.590781317124,147.149116491588 107.097261853201,146.616191623322 99.517154945906,146.786332999147 91.3115520097925,146.69324593009 83.7793561953514,146.878129359545 75.7210107058825,147.30058826067 67.8827942974908,147.022693278498 60.6540473690728,147.217722984801 52.5921513390168,146.891147503351 44.7580418780814,147.42501020365 36.0792584439536,147.30924050244 27.8667590930429,146.941838503596 20.3859337714549,147.10433648555 12.723501757821,147.084666233361 1,147L1,147 0.567429280264919,139.679825147004 0.593744503477322,132.701982528225 1.24691864973648,125.2867480494 1.03353084459011,117.259863759875 0.786803177296852,110.271126423451 1.06217607572335,102.266459983942 1.36208728076301,94.5738538914925 0.705551015212285,86.6654618635981 1.27396763644636,78.3790897002347 1.18607388494966,70.6891143751697 1.0318761187107,63.4324853355462 1.12287160259462,55.2294293055301 1.45826925056808,47.7399925069555 0.666205010443972,39.33932449009 1.06587683973176,30.9368940851358 0.833835736170089,22.6864856956832 1.37235801300315,14.3370540839768 1,1z" /&gt;&lt;/av:Path.Data&gt;&lt;/av:Path&gt;&lt;/SketchRectangleUC.DrawPath&gt;&lt;/SketchRectangleUC&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>52.836666666666673</Left>
+      <Top>87.5</Top>
+      <Width>120.32666666666667</Width>
+      <Height>24</Height>
+      <ID>a4aaf647-f1ad-4117-89e7-adb323ee3117</ID>
+      <zIndex>9</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="商品名" Height="24" Width="120.326666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>186.83666666666667</Left>
+      <Top>86.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>3cc49e50-baf6-40bf-ade8-bf0689857f78</ID>
+      <zIndex>10</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="单位" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>261.8366666666667</Left>
+      <Top>85.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>a12f6c6d-7b31-4fba-a877-9d11898e392a</ID>
+      <zIndex>11</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="单价" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>339.83666666666664</Left>
+      <Top>85.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>6165b8ba-ce98-4470-a2d4-bfa5b3c43f72</ID>
+      <zIndex>12</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="数量" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>417.83666666666664</Left>
+      <Top>84.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>9b8b5ac9-2244-47eb-9b0f-a5790c912a88</ID>
+      <zIndex>13</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="说明" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>51.836666666666673</Left>
+      <Top>117.5</Top>
+      <Width>120.32666666666667</Width>
+      <Height>24</Height>
+      <ID>d185a570-f304-4dec-a1e2-ff4ac23d5790</ID>
+      <zIndex>14</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="商品名" Height="24" Width="120.326666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>185.83666666666667</Left>
+      <Top>116.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>96696bd1-bdbc-4d7c-b765-b26f8c4248e0</ID>
+      <zIndex>15</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="单位" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>260.8366666666667</Left>
+      <Top>115.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>70b456ff-c478-49fe-8cea-8985bb176aed</ID>
+      <zIndex>16</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="单价" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>339.83666666666664</Left>
+      <Top>116.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>7c954fae-05d5-40d9-a79c-8e32a66db0c9</ID>
+      <zIndex>17</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="数量" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>416.83666666666664</Left>
+      <Top>114.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>15374386-de28-4207-b3e5-4c0a82bbb48b</ID>
+      <zIndex>18</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="说明" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>51.836666666666673</Left>
+      <Top>148.5</Top>
+      <Width>120.32666666666667</Width>
+      <Height>24</Height>
+      <ID>64f3d33c-d9ed-4493-a6fe-61918f950ab5</ID>
+      <zIndex>19</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="商品名" Height="24" Width="120.326666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>185.83666666666667</Left>
+      <Top>147.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>ad32426e-b801-46e3-8a3e-f8ae54cf94d3</ID>
+      <zIndex>20</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="单位" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>260.8366666666667</Left>
+      <Top>146.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>472afedb-2340-48ae-9b59-c68357461757</ID>
+      <zIndex>21</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="单价" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>337.83666666666664</Left>
+      <Top>146.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>52ed3880-8310-4a53-b007-6b01119fb722</ID>
+      <zIndex>22</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="数量" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+    <DesignerItem>
+      <Left>416.83666666666664</Left>
+      <Top>145.5</Top>
+      <Width>62.326666666666668</Width>
+      <Height>25</Height>
+      <ID>64e28f9e-876a-45bc-a3ea-345e541cd945</ID>
+      <zIndex>23</zIndex>
+      <IsGroup>false</IsGroup>
+      <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
+      <Content>&lt;TextBoxItem Text="说明" Height="25" Width="62.3266666666667" Template="{av:DynamicResource TextBoxItemTemplate}" ToolTip="TextBox" IsHitTestVisible="False" xmlns="clr-namespace:MockupDesigner.Items;assembly=MockupDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" /&gt;</Content>
+    </DesignerItem>
+  </DesignerItems>
+</Root>

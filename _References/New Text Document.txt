@@ -1,0 +1,22 @@
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            save.Filter = "EXCEL文件|*.xls";
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                Dictionary<int, string> tabFeild = new Dictionary<int, string>();
+                if (this.Text == "成品库存信息")
+                {
+                    tabFeild[0] = "成品库存信息表";
+                }
+                else
+                {
+                    tabFeild[0] = "半成品库存信息表";
+                }
+                tabFeild[1] = "产品型号";
+                tabFeild[2] = "产品名称";
+                tabFeild[3] = "产品数量";
+                ExcelClass excel = new ExcelClass(tabFeild);
+                excel.ToExcel(save.FileName, dgvData);
+            }
+        }
